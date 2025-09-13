@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Yamin Hossan</title>
-  <link rel="stylesheet" href="style.css.text">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -20,23 +20,39 @@
   </header>
 
   <main>
-    <section>
-      <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Name" required><br>
-        <input type="email" placeholder="Email" required><br>
-        <input type="text" placeholder="Number"><br>
-        <select>
-          <option>General Enquiry</option>
-          <option>Order</option>
-        </select><br>
-        <textarea placeholder="Enter your message..."></textarea><br>
-        <button type="submit">Submit</button>
-      </form>
-      <p>Email: yaminh888@gmail.com</p>
-      <p>
-        <a href="#">Facebook</a> | <a href="#">YouTube</a> | <a href="#">Instagram</a>
-      </p>
+    <h2>Contact Me</h2>
+
+    <section class="product-container">
+      <div class="product-image">
+        <img src="contact_banner.jpg" alt="Contact Banner" width="280">
+      </div>
+      <div class="product-details">
+        <p>
+          <strong>বাংলা:</strong> অর্ডার বা যেকোনো প্রশ্নের জন্য সরাসরি নিচের ফর্মে তথ্য পূরণ করুন।<br>
+          <strong>English:</strong> For orders or any inquiries, please fill out the form below.<br>
+          <strong>العربية:</strong> للطلبات أو أي استفسارات، يرجى ملء النموذج أدناه.
+        </p>
+
+        <!-- Form to send email -->
+        <form action="https://formsubmit.co/yaminh888@gmail.com" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required><br>
+          <input type="email" name="email" placeholder="Your Email" required><br>
+          <textarea name="message" placeholder="Write your message..." required></textarea><br>
+          <button type="submit">Send Message</button>
+        </form>
+
+        <p class="contact-text">
+          📧 Email: <a href="mailto:yaminh888@gmail.com">yaminh888@gmail.com</a><br>
+          📱 WhatsApp: 01989615778
+        </p>
+
+        <p class="contact-text">
+          🌐 Social Links:<br>
+          <a href="https://www.youtube.com/@yaminhossan1" target="_blank">YouTube</a> | 
+          <a href="https://www.facebook.com/profile.php?id=100075288226090" target="_blank">Facebook</a> | 
+          <a href="https://www.instagram.com/_yamin_hossan_" target="_blank">Instagram</a>
+        </p>
+      </div>
     </section>
   </main>
 
